@@ -1,8 +1,8 @@
 namespace ActivitatiVoluntariatMOBILE;
 
-public partial class Despre : ContentPage
+public partial class DesprePage : ContentPage
 {
-	public Despre()
+	public DesprePage()
 	{
 		InitializeComponent();
 	}

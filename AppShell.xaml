@@ -6,9 +6,20 @@
     xmlns:local="clr-namespace:ActivitatiVoluntariatMOBILE"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Meniu"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" 
+            />
+
+        <ShellContent
+            Title="Despre"
+            ContentTemplate="{DataTemplate local:DesprePage}"
+            Route="DesprePage"
+            />
+
+    </TabBar>
+    
 
 </Shell>
