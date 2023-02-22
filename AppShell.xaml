@@ -18,6 +18,11 @@
             ContentTemplate="{DataTemplate local:DesprePage}"
             Route="DesprePage"
             />
+        <ShellContent
+            Title="Activitati"
+            ContentTemplate="{DataTemplate local:ActivitateEntryPage}"
+            Route="ActivitatiEntryPage"
+            />
 
     </TabBar>
     
