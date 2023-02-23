@@ -5,7 +5,7 @@
              x:Class="ActivitatiVoluntariatMOBILE.ActivitatePage"
              Title="ActivitatePage">
     <StackLayout Margin="20">
-        <Editor Placeholder="Introduceti lista de echipamente"
+        <Editor Placeholder="Introduceti lista de activitati"
                     Text="{Binding Descriere}">
             <Editor.Behaviors>
                 
@@ -29,7 +29,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Text="Adauga/Alege echipamente de inchiriat" MaximumWidthRequest="300" Clicked="OnChooseButtonClicked"/>
-        <Button Text="Sterge echipament" MaximumWidthRequest="300" Clicked="OnDeleteItemButtonClicked"/>
+        <Button Text="Alege activitatea" MaximumWidthRequest="300" Clicked="OnChooseButtonClicked"/>
+        <Button Text="Sterge activitate" MaximumWidthRequest="300" Clicked="OnDeleteItemButtonClicked"/>
     </StackLayout>
 </ContentPage>

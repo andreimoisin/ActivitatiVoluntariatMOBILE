@@ -5,7 +5,7 @@
              Title="ActivitateAPage">
     <ContentPage.Content>
         <StackLayout Margin="20">
-            <Editor Placeholder="Introdu denumirea activitatii" Margin="20" Text="{Binding Denumire}" HeightRequest="50" />
+            <Editor Placeholder="Introdu denumirea activitatii" Margin="20" Text="{Binding Nume}" HeightRequest="50" />
             <Editor Placeholder="Introdu denumirea departamentului" Margin="20" Text="{Binding Departament}" HeightRequest="50" />
             <Grid>
                 <Grid.RowDefinitions>
@@ -22,7 +22,7 @@
                 <ListView Grid.Row="1" Grid.Column="0" x:Name="listView" Margin="20" IsRefreshing="True" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding Denumire}" />
+                            <TextCell Text="{Binding Nume}" />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
