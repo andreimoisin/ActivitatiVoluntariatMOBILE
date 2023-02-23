@@ -6,7 +6,7 @@
     
     <VerticalStackLayout>
         <Label 
-            Text="First Commit, MASTER branch create!"
+            Text="First Commit, CoreDev branch create!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
