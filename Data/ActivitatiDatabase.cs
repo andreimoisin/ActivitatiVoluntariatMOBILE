@@ -59,7 +59,7 @@ namespace ActivitatiVoluntariatMOBILE.Data
         public Task<int> SaveListActivitatiAsync(ListActivitati listp) { if (listp.ID != 0) { return _database.UpdateAsync(listp); } else { return _database.InsertAsync(listp); } }
         public Task<List<Activitate>> GetListActivitatiAsync(int shoplistid)
         {
-            return _database.QueryAsync<Activitate>("select P.ID, P.Nume from Activitate P" + " inner join ListActivitati LP" + " on P.ID = LP.ActivitateID where LP.ActivitateVoluntariID = ?", shoplistid);
+            return _database.QueryAsync<Activitate>("select P.ID, P.Nume from Activitate P" + " inner join ListActivitati LP" + " on P.ID = LP.ActivitatiID where LP.ActivitateVoluntariID = ?", shoplistid);
         }
         public Task<int> DeleteListActivitatiAsync(ListActivitati listp)
         {
